@@ -6,7 +6,7 @@ A personagem é exibida diretamente da imagem fornecida, por um viewport SVG que
 
 A animação CSS move exclusivamente duas pequenas regiões dos olhos em um ciclo de nove segundos, sem movimento da cabeça ou do corpo. A preferência de movimento reduzido desliga a animação. A imagem é decorativa e não entra na leitura de telas nem intercepta cliques. Não há dependência nova, API paga, fonte remota ou serviço externo.
 
-A composição foi adaptada às funções do tutor; não reproduz os slogans ou a marca do cartaz. A imagem original do usuário fica em `frontend/src/assets/terminal-reference.jpg` e não é enviada a terceiros.
+A composição foi adaptada às funções do tutor; não reproduz os slogans ou a marca do cartaz na interface. A imagem original fornecida fica em `frontend/src/assets/terminal-reference.jpg` e acompanha o código publicado. Durante o uso do aplicativo, a imagem é carregada localmente.
 
 Validação: build TypeScript/Vite e os 34 testes existentes da interface passaram. Revisão visual em 1280 × 900 e 800 × 620; retrato fixo no rodapé do menu e navegação acessível em janela compacta. Backend e limites de contexto permanecem os da versão 0.13.
 
