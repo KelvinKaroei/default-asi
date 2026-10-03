@@ -1,0 +1,66 @@
+{
+  "version": "0.13.0",
+  "created": "2026-10-01T21:01:46",
+  "installer": "desktop\\target\\release\\bundle\\nsis\\Cyber AI Tutor_0.13.0_x64-setup.exe",
+  "bytes": 1219909724,
+  "sha256": "3c0490fefe014d924fa66718e1930a2b5046e628e0fdd6f79458f1053e29791c",
+  "tests": {
+    "python": 36,
+    "frontend": 34
+  },
+  "benchmark": [
+    {
+      "context": 8192,
+      "seconds": 16.33,
+      "tokens": 128,
+      "tokens_per_second": 14.1,
+      "vram_gib": 5.34,
+      "loaded": 8192
+    },
+    {
+      "context": 16384,
+      "seconds": 7.25,
+      "tokens": 128,
+      "tokens_per_second": 48.2,
+      "vram_gib": 5.95,
+      "loaded": 16384
+    },
+    {
+      "context": 32768,
+      "seconds": 7.41,
+      "tokens": 128,
+      "tokens_per_second": 48.1,
+      "vram_gib": 7.11,
+      "loaded": 32768
+    }
+  ],
+  "conversation_checks": [
+    {
+      "seconds": 21.3,
+      "characters": 10,
+      "reason": "stop",
+      "tps": 25.8,
+      "omitted": 246,
+      "check": "old_fact"
+    },
+    {
+      "seconds": 61.1,
+      "characters": 10367,
+      "reason": "stop",
+      "tps": 44.8,
+      "omitted": 0,
+      "check": "long_complete_answer"
+    }
+  ],
+  "installation": "verified: install and update preserve databases/settings; backend and tokenizer hashes exact; native executable equals build after expected NSIS marker patch",
+  "applied_settings": {
+    "num_ctx": 32768,
+    "max_output": 8192
+  },
+  "installed_ui_probe": {
+    "result": "Conexão local funcionando.",
+    "tokens_per_second": 42.6,
+    "total_seconds": 6.81,
+    "vram_gib": 7.11
+  }
+}

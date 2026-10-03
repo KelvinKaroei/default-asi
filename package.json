@@ -1,0 +1,42 @@
+{
+  "name": "cyber-ai-tutor",
+  "version": "0.14.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config frontend/vite.config.ts",
+    "build": "tsc -p frontend/tsconfig.json && vite build --config frontend/vite.config.ts",
+    "preview": "vite preview --config frontend/vite.config.ts",
+    "desktop": "node scripts/desktop.mjs dev",
+    "desktop:build": "node scripts/desktop.mjs build --no-bundle",
+    "test": "vitest run --config frontend/vite.config.ts",
+    "format": "prettier --write frontend scripts desktop/tauri.conf.json package.json",
+    "format:check": "prettier --check frontend scripts desktop/tauri.conf.json package.json",
+    "backend:package": "node scripts/package-backend.mjs",
+    "desktop:package": "npm.cmd run backend:package && node scripts/desktop.mjs build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.11.1",
+    "lucide-react": "^0.468.0",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.4",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.0",
+    "jsdom": "^26.1.0",
+    "prettier": "3.9.9",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.4",
+    "vitest": "^3.2.4"
+  }
+}

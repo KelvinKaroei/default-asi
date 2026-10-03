@@ -1,0 +1,42 @@
+# Dependências e compilações
+node_modules/
+dist/
+target/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+coverage/
+build/
+.tools/
+.npm-cache/
+test-results/
+playwright-report/
+desktop/gen/
+
+# Dados pessoais e configuração privada
+.env
+.env.*
+!.env.example
+runtime/
+logs/
+*.log
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-shm
+*.db-wal
+*.faiss
+*.gguf
+
+# Arquivos temporários
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Capturas e manutenção específicas do computador de desenvolvimento
+/docs/terminal-design-installed.png
+/docs/terminal-design-preview.png
+/scripts/migrate-default-name.py

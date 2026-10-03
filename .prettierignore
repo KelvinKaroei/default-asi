@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.tools/
+desktop/target/
+desktop/gen/
+desktop/icons/
+package-lock.json

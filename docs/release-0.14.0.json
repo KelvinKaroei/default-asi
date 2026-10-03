@@ -1,0 +1,14 @@
+{
+  "version": "0.14.0",
+  "installer": "desktop\\target\\release\\bundle\\nsis\\Cyber AI Tutor_0.14.0_x64-setup.exe",
+  "bytes": 1220088997,
+  "sha256": "654cec1124506446f73141b1cab4cd32bf31dcb4a091d64bbdd706e49a20de26",
+  "frontend_tests": 34,
+  "backend": "unchanged from 0.13.0",
+  "visual_review": [
+    "1280x900",
+    "800x620"
+  ],
+  "installation": "verified: install and update preserved databases/settings; installed binary hashes verified",
+  "native_review": "0.14 open, Ollama connected, new chat, portrait at lower left"
+}

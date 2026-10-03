@@ -1,0 +1,96 @@
+@import './styles/base.css';
+@import './styles/sidebar.css';
+@import './styles/chat.css';
+@import './styles/pages.css';
+@import './styles/responsive.css';
+@import './styles/terminal.css';
+.learning-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 28px;
+  margin: 24px 0;
+}
+.learning-layout nav button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 8px 0;
+}
+.learning-layout [aria-current],
+.lab-tabs [aria-pressed='true'] {
+  border-color: #60cbb4;
+  color: #8aead1;
+}
+.lesson {
+  line-height: 1.8;
+  min-width: 0;
+}
+.lesson > button,
+.lab-tabs button {
+  margin: 6px 8px 12px 0;
+}
+.lesson fieldset {
+  margin: 24px 0;
+  border: 1px solid #34423f;
+  border-radius: 10px;
+  padding: 18px;
+}
+.quiz-option {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 12px 0;
+}
+.lab-step {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid #34423f;
+  border-radius: 12px;
+}
+.message-sources {
+  margin: 16px 0;
+  font-size: 13px;
+  color: #a7b8b2;
+}
+.message-sources blockquote {
+  white-space: pre-wrap;
+  margin: 10px 0;
+  padding-left: 14px;
+  border-left: 2px solid #48776a;
+}
+@media (max-width: 1050px) {
+  .learning-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.content-page button {
+  background: #24352d;
+  border: 1px solid #40584a;
+  border-radius: 7px;
+  padding: 9px 13px;
+  color: #c3dfcd;
+  line-height: 1.4;
+}
+.content-page button:hover:not(:disabled) {
+  background: #304a3b;
+  border-color: #699479;
+}
+.content-page textarea {
+  min-height: 90px;
+  width: 100%;
+  resize: vertical;
+  padding: 12px;
+  border: 1px solid #40584a;
+  border-radius: 7px;
+  background: #111c17;
+  color: #e4e8e6;
+}
+.content-page details > button {
+  display: block;
+  margin: 8px 0;
+  text-align: left;
+}
+.content-page input[type='checkbox'],
+.content-page input[type='radio'] {
+  accent-color: #9fe0c3;
+}

@@ -1,0 +1,6 @@
+{
+  "identifier": "main",
+  "description": "A janela local recebe somente a conexão da sessão Python.",
+  "windows": ["main"],
+  "permissions": ["allow-backend-connection"]
+}

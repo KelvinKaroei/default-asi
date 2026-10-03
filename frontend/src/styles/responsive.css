@@ -1,0 +1,223 @@
+@media (min-width: 1500px) {
+  .welcome {
+    padding-top: 55px;
+  }
+  .welcome h1 {
+    font-size: 46px;
+  }
+  .suggestion-card {
+    padding: 20px 23px;
+  }
+  .hero-description {
+    margin-bottom: 34px;
+  }
+  .sidebar {
+    width: 272px;
+    flex-basis: 272px;
+  }
+}
+@media (max-height: 950px) and (min-width: 901px) {
+  .welcome {
+    padding-top: 17px;
+  }
+  .hero-icon {
+    margin: 17px auto 16px;
+    height: 49px;
+    width: 49px;
+  }
+  .welcome h1 {
+    font-size: 34px;
+  }
+  .hero-description {
+    margin: 11px 0 19px;
+  }
+  .card-top {
+    margin-bottom: 8px;
+  }
+  .suggestion-card {
+    padding: 12px 17px;
+  }
+  .method {
+    margin-top: 18px;
+  }
+  .chat-toolbar {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 230px;
+    flex-basis: 230px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .welcome {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .mode-description {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 30;
+    width: 264px;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+  }
+  .sidebar.is-open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    border: 0;
+    z-index: 25;
+  }
+  .mobile-only {
+    display: grid;
+  }
+  .brand .mobile-only {
+    margin-left: auto;
+  }
+  .topbar {
+    padding: 0 20px;
+    min-height: 58px;
+  }
+  .chat-toolbar {
+    padding: 18px 24px 0;
+  }
+  .welcome {
+    padding-top: 29px;
+  }
+  .welcome h1 {
+    font-size: 38px;
+  }
+  .chat-bottom {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 520px) {
+  .privacy-badge span,
+  .session-label {
+    display: none;
+  }
+  .topbar {
+    padding: 0 14px;
+  }
+  .breadcrumb {
+    gap: 9px;
+  }
+  .welcome {
+    padding: 28px 20px 18px;
+  }
+  .welcome h1 {
+    font-size: 32px;
+  }
+  .welcome-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.6px;
+  }
+  .hero-icon {
+    margin: 20px auto;
+  }
+  .hero-description {
+    font-size: 12px;
+  }
+  .suggestion-grid {
+    gap: 9px;
+  }
+  .suggestion-card {
+    padding: 14px 12px;
+  }
+  .suggestion-card strong {
+    font-size: 12px;
+  }
+  .suggestion-card > span {
+    font-size: 10px;
+  }
+  .method {
+    gap: 8px;
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .chat-bottom {
+    padding: 8px 14px 14px;
+  }
+  .composer-caption {
+    font-size: 8px;
+    gap: 8px;
+  }
+  .demo-notice {
+    font-size: 9px;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .demo-notice svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .statusbar {
+    padding: 7px 12px;
+  }
+  .statusbar > span:last-child {
+    font-size: 7px;
+    letter-spacing: 0;
+  }
+  .messages {
+    padding: 18px;
+  }
+  .message {
+    gap: 10px;
+  }
+  .message p {
+    font-size: 12px;
+  }
+  .composer textarea {
+    font-size: 12px;
+  }
+}
+@media (max-height: 760px) {
+  .sidebar {
+    padding-top: 16px;
+  }
+  .brand {
+    padding-bottom: 17px;
+  }
+  .search {
+    margin-top: 12px;
+    margin-bottom: 17px;
+  }
+  .topic-nav button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .recent-heading {
+    margin-top: 18px;
+  }
+  .local-card,
+  .profile {
+    display: none;
+  }
+  .sidebar-bottom {
+    padding-bottom: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-backend-connection"
+description = "Enables the backend_connection command without any pre-configured scope."
+commands.allow = ["backend_connection"]
+
+[[permission]]
+identifier = "deny-backend-connection"
+description = "Denies the backend_connection command without any pre-configured scope."
+commands.deny = ["backend_connection"]

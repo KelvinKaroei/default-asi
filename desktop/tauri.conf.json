@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Default (ASI)",
+  "version": "0.14.1",
+  "identifier": "com.cyberaitutor.desktop",
+  "build": {
+    "beforeDevCommand": {
+      "script": "npm.cmd run dev",
+      "cwd": ".."
+    },
+    "beforeBuildCommand": {
+      "script": "npm.cmd run build",
+      "cwd": ".."
+    },
+    "devUrl": "http://127.0.0.1:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Default (ASI)",
+        "width": 1280,
+        "height": 900,
+        "minWidth": 760,
+        "minHeight": 620,
+        "center": true,
+        "theme": "Dark",
+        "backgroundColor": "#000000"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' ipc: http://ipc.localhost http://127.0.0.1:*; object-src 'none'; frame-src 'none'; base-uri 'self'",
+      "devCsp": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost http://127.0.0.1:* ws://127.0.0.1:1420; object-src 'none'; frame-src 'none'; base-uri 'self'",
+      "capabilities": ["main"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": ["icons/icon.ico", "icons/icon.png"],
+    "resources": {
+      "../build/sidecar/cyber-backend/": "backend/",
+      "../docs/": "guides/",
+      "../build/ollama-package/": "ollama/"
+    },
+    "windows": {
+      "webviewInstallMode": {
+        "type": "offlineInstaller"
+      },
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": ["PortugueseBR"],
+        "displayLanguageSelector": false,
+        "compression": "zlib"
+      }
+    }
+  }
+}
